@@ -11,6 +11,8 @@ public class App {
 		String currentInput;
 		while (true) {
 			System.out.println("Current state: " + StateBase.currentState.getStateName());
+			System.out.println("Currently picked bus: " + StateBase.pickedBus);
+			System.out.println("Currently picked bus: " + StateBase.pickedSeat);
 			System.out.print("Input: ");
 			currentInput = input.nextLine();
 			StateBase.handleInput(currentInput);
